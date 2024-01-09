@@ -1,6 +1,8 @@
 # NVIDIA AI Workbench: Introduction
 This is an [NVIDIA AI Workbench](https://developer.nvidia.com/blog/develop-and-deploy-scalable-generative-ai-models-seamlessly-with-nvidia-ai-workbench/) example Project that provides a short introduction of the cuML library, a Python GPU-accelerated Machine Learning library for building and implementing many common machine learning algorithms and techniques. cuML provides an API built upon Scikit-Learn that will be familiar to ML engineers and developers, so they can use it to easily accelerate their workflows without going into the details of CUDA programming. Users in the [AI Workbench Early Access Program](https://developer.nvidia.com/ai-workbench-early-access) can get up and running with this Project in minutes.
 
+Have questions? Please direct any issues, fixes, suggestions, and discussion on this project to the DevZone Members Only Forum thread [here](https://forums.developer.nvidia.com/t/support-workbench-example-project-rapids-cuml/278373). 
+
 ## Project Description
 cuML is a suite of libraries that implement machine learning algorithms and mathematical primitives functions that share compatible APIs with other RAPIDS projects. cuML enables data scientists, researchers, and software engineers to run traditional tabular ML tasks on GPUs without going into the details of CUDA programming. In most cases, cuML's Python API matches the API from scikit-learn.
 
