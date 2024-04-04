@@ -1,0 +1,1 @@
+{"schema":"v1","records":[{"type":"PROJECT","operation":"UPDATED","data":[{"data":"Updated Base Environment to 'rapidsai/notebooks:24.02-cuda12.0-py3.10'","mime":"text/plain"}],"important":null},{"type":"PROJECT","operation":"UPDATED","data":[{"data":"Updated stop_command in app 'jupyterlab'","mime":"text/plain"}],"important":null}]}
