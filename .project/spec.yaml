@@ -22,16 +22,16 @@ layout:
 environment:
   base:
     registry: docker.io
-    image: docker.io/rapidsai/rapidsai:23.06-cuda11.8-runtime-ubuntu22.04-py3.10
+    image: rapidsai/notebooks:24.02-cuda12.0-py3.10
     build_timestamp: "20230321105648"
     name: RAPIDS Notebook
     supported_architectures:
     - amd64
-    cuda_version: 11.8.0
-    description: A Notebook Container with CUDA 11.8 and Python 3.10
+    cuda_version: 12.0.0
+    description: A Notebook Container with CUDA 12.0 and Python 3.10
     entrypoint_script: ""
     labels:
-    - cuda11.8
+    - cuda12.0
     - python3.10
     apps: []
     programming_languages:
@@ -46,19 +46,15 @@ environment:
       uid: ""
       gid: ""
       username: ""
-      is_root: null
     package_managers:
     - name: conda
       binary_path: /opt/conda/bin/conda
       installed_packages:
-      - jupyterlab=3.4.4
+      - jupyterlab=3.6.7
       - tensorboard
       - nodejs
       - notebook
-      - python=3.10.9
-      - pytorch=1.13.1
-      - torchvision
-      - pytorch-cuda=11.8.0
+      - python=3.10.13
     - name: apt
       binary_path: /usr/bin/apt
       installed_packages:
@@ -75,8 +71,8 @@ environment:
       binary_path: /opt/conda/bin/pip
       installed_packages: []
     package_manager_environment:
-      name: conda
-      target: /opt/conda/envs/rapids
+      name: ""
+      target: ""
 execution:
   apps:
   - name: jupyterlab
@@ -87,7 +83,7 @@ execution:
     health_check_command: '[ \$(echo url=\$(jupyter lab list 2>&1 | head -n 2 | tail
       -n 1 | cut -f1 -d'''' '''' | grep -v ''''Currently'''' | sed ''''s@/?@/lab?@g'''')
       | curl -o /dev/null -s -w ''''%{http_code}'''' --config -) == ''''200'''' ]'
-    stop_command: jupyter lab stop 8888 && pkill -f rapids -9
+    stop_command: jupyter lab stop 8888
     user_msg: ""
     icon_url: ""
     webapp_options:
