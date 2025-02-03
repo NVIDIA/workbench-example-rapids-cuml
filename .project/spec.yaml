@@ -1,9 +1,9 @@
 specVersion: v2
 specMinorVersion: 1
 meta:
-  name: rapids-cudf
-  image: project-rapids-cudf
-  description: Accelerate Data Science workflows with RAPIDS cuDF and cuDF.pandas
+  name: rapids-cuml
+  image: project-rapids-cuml
+  description: Accelerate Data Science workflows with RAPIDS cuML
   labels: []
   createdOn: "2023-09-19T22:48:48Z"
   defaultBranch: main
